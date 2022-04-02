@@ -19,7 +19,7 @@ def classify():
 
     pixels = [im.getpixel((i,j)) for j in range(im.height) for i in range(im.width)]
 
-    cond = (255, 194, 231) in pixels
+    cond = (255, 194, 231) in pixels or (255, 165, 217) in pixels or (252, 215, 222) in pixels or (73, 186, 77) in pixels
     os.remove(filename)
     if cond:
         return "Peppa Pig"
