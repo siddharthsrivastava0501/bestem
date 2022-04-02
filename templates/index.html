@@ -1,0 +1,34 @@
+<html>
+<head>
+
+    <style>
+        h1 {
+            color: aquamarine;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>BESTEM'22 Ubisoft</h1>
+        <p>'I choose a lazy person to do a hard job because a lazy person will find an easy way to do it' - Bill Gates </p>
+
+        <form action="{{ url_for('classify') }}" method="post" enctype="multipart/form-data">
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <input type="submit">
+        </form>
+
+    </main>
+</body>
+
+</html>
